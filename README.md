@@ -2,6 +2,8 @@
 
 Made with my mentor at [Bloc](http://bloc.io).
 
+Heroku app name: [jeffreykliu-bloccit](http://jeffreykliu-bloccit.herokuapp.com/).
+
 
 == README
 
