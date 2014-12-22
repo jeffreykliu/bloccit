@@ -16,16 +16,16 @@ users = User.all
 # we create an instance of User which isn't immediately saved to the database.
 
 # The 'skip_confirmation!' method sets the 'confirmed_at' attribute
-# to avoid the triggering an confimration email when the User is saved.
+# to avoid the triggering an confirmation email when the User is saved.
 
 # The 'save' method then saves this User to the database.
 
 # Create Posts
 50.times do
   Post.create!(
-    user:    users.sample, 
-    title:   Faker::Lorem.sentence,
-    body:    Faker::Lorem.paragraph
+    user:  users.sample, 
+    title: Faker::Lorem.sentence,
+    body:  Faker::Lorem.paragraph
   )  
 end
 posts = Post.all
@@ -35,18 +35,18 @@ posts = Post.all
   Comment.create!(
     # user: user.sample,   # we have not yet associated Users with Comments
     post:  posts.sample,
-    body:   Faker::Lorem.paragraph
+    body:  Faker::Lorem.paragraph
   )
 end
 
 user = User.first
-user.skip_confirmation!
+user.skip_reconfirmation!
 user.update_attributes!(
   email: 'jeffreykliu@gmail.com',
-  password: 'querty123'
+  password: 'qwerty123'
 )
 
-
 puts "Seed finished"
+puts "#{User.count} users created"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
