@@ -65,3 +65,9 @@ gem 'pundit'
 
 #Store credentials as environmental variables
 gem 'figaro', '1.0'
+
+#Simple Form used as alternative to form_group_tag helper
+gem 'simple_form' 
+
+#Redcarpet used for post markdown
+gem 'redcarpet'
