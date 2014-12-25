@@ -71,3 +71,12 @@ gem 'simple_form'
 
 #Redcarpet used for post markdown
 gem 'redcarpet'
+
+#Used for image uploading
+gem 'carrierwave'
+
+#Used to manipulate images
+gem 'mini_magick'
+
+#Cloud services library used for uploading to S3
+gem 'fog'
