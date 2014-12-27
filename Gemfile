@@ -80,3 +80,6 @@ gem 'mini_magick'
 
 #Cloud services library used for uploading to S3
 gem 'fog'
+
+#Used for pagination
+gem 'will_paginate'
