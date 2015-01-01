@@ -37,7 +37,7 @@ class TopicsController < ApplicationController
     if @topic.update_attributes(topic_params)
       redirect_to @topic
     else
-      flash[:error] = "Error saving topic. Please try again."
+      flash[:error] = "Error saving topic. Please try again"
       render :edit
     end
   end
@@ -55,7 +55,6 @@ class TopicsController < ApplicationController
       render :show
     end
   end
-
 
   private
 
