@@ -90,3 +90,6 @@ gem 'fog'
 
 #Used for pagination
 gem 'will_paginate'
+
+# Performance monitoring
+gem 'newrelic_rpm'
